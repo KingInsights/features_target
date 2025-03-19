@@ -1,4 +1,9 @@
-yfinance
 streamlit
+yfinance
 pandas
+statsmodels
 matplotlib
+scikit-learn
+tensorflow
+numpy
+
