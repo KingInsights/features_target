@@ -73,7 +73,7 @@ if selected_features:
         df_weekly = df_weekly.ffill().bfill().round(2)
         df_weekly.index = df_weekly.index.date
         st.session_state.df_final = df_weekly
-        st.dataframe(df_weekly.head())
+        st.dataframe(df_weekly.tail())
         st.success("✅ Feature data downloaded.")
 
 # Download target data
