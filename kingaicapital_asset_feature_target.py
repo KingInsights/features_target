@@ -89,7 +89,7 @@ if 'df_final' in st.session_state:
         df_target.columns = ["target"]
         df_target = df_target.round(2).dropna()
         st.session_state.df_target = df_target
-        st.dataframe(df_target.head())
+        st.dataframe(df_target.tail())
         st.success("✅ Target data downloaded.")
 
 # Create lag dataframes
